@@ -58,3 +58,18 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
     }
 });
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+// Check for saved dark mode preference or default to light mode
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
+if (isDarkMode) {
+    body.classList.add('dark-mode');
+}
+
+// Toggle dark mode on button click
+darkModeToggle.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    const isDarkModeEnabled = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkModeEnabled);
+});
