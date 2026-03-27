@@ -15,6 +15,210 @@
     --transition: all 0.3s ease;
 }
 
+/* Dark Mode Colors */
+body.dark-mode {
+    --primary-color: #dc2626;
+    --secondary-color: #991b1b;
+    --accent-color: #ffffff;
+    --text-dark: #f3f4f6;
+    --text-light: #d1d5db;
+    --light-bg: #1f2937;
+    --white: #0f172a;
+}
+
+body.dark-mode {
+    background-color: #0f172a;
+    color: #f3f4f6;
+}
+
+/* Dark Mode - Navbar */
+body.dark-mode .navbar {
+    background-color: #1e293b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .logo {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #f3f4f6;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #dc2626;
+}
+
+/* Dark Mode - Hero Section */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #dc2626;
+}
+
+body.dark-mode .hero-content h1 {
+    color: #f3f4f6;
+}
+
+body.dark-mode .hero-content p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .hero-logo {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: #ffffff;
+    box-shadow: 0 10px 40px rgba(220, 38, 38, 0.5);
+}
+
+/* Dark Mode - About Section */
+body.dark-mode .about {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+body.dark-mode .about h2 {
+    color: #dc2626;
+}
+
+body.dark-mode .about-intro {
+    color: #cbd5e1;
+}
+
+body.dark-mode .card {
+    background-color: #1e293b;
+    color: #f3f4f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-left-color: #dc2626;
+}
+
+body.dark-mode .card h3 {
+    color: #dc2626;
+}
+
+body.dark-mode .about h3 {
+    color: #dc2626;
+}
+body.dark-mode .value-item {
+    background-color: #1e293b;
+    color: #f3f4f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-top-color: #dc2626;
+}
+
+body.dark-mode .value-item h4 {
+    color: #dc2626;
+}
+
+/* Dark Mode - Services Section */
+body.dark-mode .services {
+    background-color: #0f172a;
+}
+
+body.dark-mode .services h2 {
+    color: #dc2626;
+}
+
+body.dark-mode .services h2::after {
+    background-color: #dc2626;
+}
+
+body.dark-mode .service-card {
+    background-color: #1e293b;
+    color: #f3f4f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-top-color: #dc2626;
+}
+
+body.dark-mode .service-card::before {
+    background: linear-gradient(90deg, #dc2626 0%, #991b1b 100%);
+}
+
+body.dark-mode .service-card h3 {
+    color: #dc2626;
+}
+
+body.dark-mode .service-card p,
+body.dark-mode .service-card ul li {
+    color: #cbd5e1;
+}
+
+body.dark-mode .service-card ul li:before {
+    color: #dc2626;
+}
+
+/* Dark Mode - Clients Section */
+body.dark-mode .clients {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+body.dark-mode .client-item {
+    background-color: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+    color: #f3f4f6;
+}
+
+body.dark-mode .client-item:hover {
+    background-color: rgba(220, 38, 38, 0.2);
+    border-color: #dc2626;
+}
+
+body.dark-mode .clients-note {
+    color: #cbd5e1;
+}
+
+/* Dark Mode - Locations Section */
+body.dark-mode .locations {
+    background-color: #1e293b;
+}
+
+body.dark-mode .locations h2 {
+    color: #dc2626;
+}
+
+body.dark-mode .locations h2::after {
+    background-color: #dc2626;
+}
+
+body.dark-mode .location-card {
+    background-color: #0f172a;
+    color: #f3f4f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+body.dark-mode .location-card:hover {
+    border-color: #dc2626;
+}
+
+body.dark-mode .location-card h3 {
+    color: #dc2626;
+}
+
+body.dark-mode .location-card p {
+    color: #cbd5e1;
+}
+
+/* Dark Mode - Footer */
+body.dark-mode .footer {
+    background-color: #1e293b;
+}
+
+body.dark-mode .footer-section h4 {
+    color: #f3f4f6;
+}
+
+body.dark-mode .footer-section p,
+body.dark-mode .footer-section a {
+    color: #cbd5e1;
+}
+
+body.dark-mode .footer-section a:hover {
+    color: #dc2626;
+}
+
+body.dark-mode .footer-bottom {
+    border-top-color: rgba(220, 38, 38, 0.2);
+    color: #94a3b8;
+}
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -91,7 +295,30 @@ body {
 .nav-links a:hover {
     color: var(--accent-color);
 }
+* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
 
+.dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+body.dark-mode .toggle-icon::before {
+    content: '☀️';
+}
 
 /* Hero Section */
 
